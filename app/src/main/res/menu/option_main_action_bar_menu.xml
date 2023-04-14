@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_gaussian_blur"
+        android:title="@string/title_gaussian_blur"
+        app:showAsAction="collapseActionView"/>
+
+    <item android:id="@+id/action_smooth_box_filter"
+        android:title="@string/box_filter"
+        app:showAsAction="collapseActionView"/>
+
+</menu>

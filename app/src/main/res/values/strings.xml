@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Native OpenCv Android template</string>
+    <string name="app_name">Native OpenCv Android</string>
+    <string name="text_change_filter">Change filter</string>
+    <string name="text_apply">Apply</string>
+    <string name="title_text_blur_horizontal">Blur horizontal</string>
+    <string name="title_text_blur_vertical">Blur vertical</string>
+    <string name="title_gaussian_blur">Gaussian Blur</string>
+    <string name="box_filter">Box filter smooth</string>
+    <string name="pyr_down">Pyr Down</string>
+    <string name="bilateral_filter">Bilateral Filter</string>
+    <string name="title_text_diameter_kernel">Diameter Kernel</string>
+    <string name="title_text_signal_color">Signal color</string>
+    <string name="title_text_sigma_space">Sigma space</string>
 </resources>
