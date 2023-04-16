@@ -1,6 +1,8 @@
 package com.example.nativeopencvandroidtemplate
 
 import android.Manifest
+import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.os.Bundle
@@ -23,6 +25,10 @@ class CameraActivity : AppCompatActivity(), CameraBridgeViewBase.CvCameraViewLis
     companion object {
         const val CAMERA_PERMISSION_REQUEST = 1
         const val TAG = "CameraActivity"
+
+        fun startCameraActivity(context: Context) {
+            context.startActivity(Intent(context, CameraActivity::class.java))
+        }
     }
 
     private var _binding: ActivityCameraBinding? = null
@@ -138,7 +144,7 @@ class CameraActivity : AppCompatActivity(), CameraBridgeViewBase.CvCameraViewLis
         val bottomRight = Point(topLeft.x + mTemplate!!.cols(), topLeft.y + mTemplate!!.rows())
 
         Imgproc.rectangle(
-            mRgba, topLeft, bottomRight, Scalar(0.0, 255.0, 0.0),2
+            mRgba, topLeft, bottomRight, Scalar(0.0, 255.0, 0.0), 2
         )
 
         val result = Mat()

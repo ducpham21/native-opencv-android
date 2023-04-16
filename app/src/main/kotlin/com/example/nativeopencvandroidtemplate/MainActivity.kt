@@ -72,6 +72,10 @@ class MainActivity : AppCompatActivity() {
                     .show(supportFragmentManager, BlurSettingDialogFragment::class.java.simpleName)
                 true
             }
+            R.id.action_open_detect_camera -> {
+                CameraActivity.startCameraActivity(this)
+                true
+            }
             else -> {
                 super.onOptionsItemSelected(item)
             }

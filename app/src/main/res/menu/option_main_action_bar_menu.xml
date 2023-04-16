@@ -10,4 +10,8 @@
         android:title="@string/box_filter"
         app:showAsAction="collapseActionView"/>
 
+    <item android:id="@+id/action_open_detect_camera"
+        android:title="@string/camera_detection"
+        app:showAsAction="collapseActionView"/>
+
 </menu>
